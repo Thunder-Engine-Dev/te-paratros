@@ -138,13 +138,18 @@ position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_hw4r5")
 autoplay = "default"
 
-[node name="Wings" parent="Sprite" instance=ExtResource("9_hui0y")]
-position = Vector2(-13, -10)
+[node name="Wings" parent="." instance=ExtResource("9_hui0y")]
+position = Vector2(-13, -18)
 
 [node name="SpriteProjectile" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(6, -16)
 texture = ExtResource("9_j3og5")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+modulate = Color(1, 1, 1, 0.0196078)
+position = Vector2(7.15256e-07, -8)
+scale = Vector2(1.6, 2.4)
 
 [node name="PosAttack" type="Marker2D" parent="."]
 visible = false
