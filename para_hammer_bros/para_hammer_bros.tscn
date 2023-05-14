@@ -8,7 +8,7 @@
 [ext_resource type="Script" path="res://engine/objects/enemies/_dead/prefabs/do_killed.gd" id="4_kp5yk"]
 [ext_resource type="Script" path="res://engine/scripts/resources/instance_node2d/instance_node2d.gd" id="5_8odi0"]
 [ext_resource type="AudioStream" uid="uid://46ern2rknx3i" path="res://engine/objects/enemies/_sounds/stomp.wav" id="6_64gf8"]
-[ext_resource type="PackedScene" uid="uid://cring63tao15d" path="res://engine/objects/enemies/hammer_bros/hammer_bro.tscn" id="6_cgqsc"]
+[ext_resource type="PackedScene" path="res://engine/objects/enemies/hammer_bros/hammer_bro.tscn" id="6_cgqsc"]
 [ext_resource type="Script" path="res://modules/te-paratros/para_hammer_bros/paratros_spawn_bros.gd" id="7_4w4ym"]
 [ext_resource type="AudioStream" uid="uid://be3uvqev2c1p6" path="res://engine/objects/players/prefabs/sounds/kick.wav" id="7_a1xfa"]
 [ext_resource type="Texture2D" uid="uid://dryaolxjr37di" path="res://engine/objects/enemies/hammer_bros/textures/green_bro.png" id="8_r451l"]
@@ -138,8 +138,8 @@ position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_hw4r5")
 autoplay = "default"
 
-[node name="Wings" parent="." instance=ExtResource("9_hui0y")]
-position = Vector2(-13, -18)
+[node name="Wings" parent="Sprite" instance=ExtResource("9_hui0y")]
+position = Vector2(-13, -10)
 
 [node name="SpriteProjectile" type="Sprite2D" parent="."]
 visible = false
