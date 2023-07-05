@@ -160,5 +160,7 @@ wait_time = 0.06
 autostart = true
 
 [connection signal="killed_succeeded" from="Body/EnemyAttacked" to="." method="queue_free"]
+[connection signal="killed_succeeded" from="Body/EnemyAttacked" to="Sprite/Wings" method="queue_free"]
 [connection signal="stomped_succeeded" from="Body/EnemyAttacked" to="." method="queue_free"]
+[connection signal="stomped_succeeded" from="Body/EnemyAttacked" to="Sprite/Wings" method="queue_free"]
 [connection signal="timeout" from="Attack" to="." method="_on_attack_timeout"]
